@@ -12,7 +12,7 @@ const {
   abortEarly: false,
 });
 if (warning) {
-    console.warn(warning, 'warning in env validation');
+  console.warn(warning, 'warning in env validation');
 }
 if (error) {
   console.error(error, 'error in env validation');
