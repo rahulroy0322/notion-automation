@@ -1,0 +1,5 @@
+import { ENV } from './env.config';
+
+const { NOTION_API_KEY, NOTION_QUOTE_DB_KEY, NOTION_DAILY_DB_KEY } = ENV;
+
+export { NOTION_API_KEY, NOTION_QUOTE_DB_KEY, NOTION_DAILY_DB_KEY };

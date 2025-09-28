@@ -1,0 +1,115 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "includes": ["src/**/*"],
+    "ignoreUnknown": false
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "formatWithErrors": false,
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto",
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "expand": "auto",
+    "useEditorconfig": true,
+    "includes": [
+      "src/**",
+      "!dist",
+      "!**/build",
+      "!**/coverage",
+      "!**/node_modules",
+      "!**/*lock*",
+      "!**/package.json",
+      "!**/*.ico",
+      "!**/.prettier*",
+      "!**/*ignore*",
+      "!**/.husky",
+      "!**/lib",
+      "!**/dist",
+      "!**/build",
+      "!**/bin",
+      "!**/*.ejs"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "complexity": {
+        "noForEach": "error",
+        "noArguments": "error"
+      },
+      "correctness": {
+        "noUnusedVariables": "error",
+        "noUnusedImports": "error"
+      },
+      "style": {
+        "noMagicNumbers": "error",
+        "useConst": "error",
+        "useTemplate": "warn",
+        "noNonNullAssertion": "off",
+        "useShorthandFunctionType": "error"
+      },
+      "suspicious": {
+        "noConsole": {
+          "level": "error",
+          "options": {
+            "allow": ["error", "warn"]
+          }
+        },
+        "noVar": "error",
+        "noEmptyBlockStatements": "error",
+        "noExplicitAny": "warn",
+        "noArrayIndexKey": "off",
+        "useAwait": "error",
+        "noFunctionAssign": "error"
+      },
+      "nursery": {
+        "useSortedClasses": "off"
+      },
+      "recommended": true
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "single",
+      "trailingCommas": "es5",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.json"]
+    },
+    {
+      "includes": ["**/*.html"]
+    },
+    {
+      "includes": ["**/*.css"]
+    },
+    {
+      "includes": ["**/*.md"]
+    }
+  ],
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "notion-automation",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "ENV=dev tsx --watch src/main.ts",
+    "format": "biome format ",
+    "format:fix": "biome format --fix",
+    "lint": "biome lint",
+    "lint:fix": "biome lint --fix",
+    "start": "ENV=prod node dist/main.js"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.4",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@notionhq/client": "^4.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "joi": "^18.0.1",
+    "pino": "^9.11.0",
+    "pino-pretty": "^13.1.1"
+  }
+}
