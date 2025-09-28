@@ -6,7 +6,7 @@
     "useIgnoreFile": false
   },
   "files": {
-    "includes": ["src/**/*", "!package.json"],
+    "includes": ["src/**/*", "!package.json", "commitlint.config.ts"],
     "ignoreUnknown": false
   },
   "formatter": {
@@ -23,6 +23,7 @@
     "useEditorconfig": true,
     "includes": [
       "src/**",
+      "commitlint.config.ts",
       "!dist",
       "!**/build",
       "!**/coverage",
@@ -76,7 +77,8 @@
         "useSortedClasses": "off"
       },
       "recommended": true
-    }
+    },
+    "includes": ["commitlint.config.ts"]
   },
   "javascript": {
     "formatter": {
